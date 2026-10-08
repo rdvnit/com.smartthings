@@ -22,7 +22,7 @@ module.exports = class SmartThingsDeviceWasher extends SmartThingsDevice {
         return this.constructor.getBooleanFromOnOff(value);
       },
     },
-    // Start cycle button (requires Remote Start enabled on machine)
+    // Start cycle button (requires Remote Control enabled on machine)
     {
       homeyCapabilityId: 'samsung_washer_start',
       async onSet() {
@@ -62,7 +62,7 @@ module.exports = class SmartThingsDeviceWasher extends SmartThingsDevice {
       smartThingsCapabilityId: 'samsungce.washerOperatingState',
       smartThingsAttributeId: 'remainingTimeStr',
       async onReport({ value }) {
-        return value || undefined;
+        return value ?? undefined;
       },
     },
     {

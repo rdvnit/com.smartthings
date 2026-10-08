@@ -1,7 +1,7 @@
 {
   "errors": {
     "offline": "Device Offline",
-    "remote_control_disabled": "Remote Start is disabled. Press Smart Control on the machine first."
+    "remote_control_disabled": "Remote Control is disabled. Press Smart Control on the machine first."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Air Wash",
